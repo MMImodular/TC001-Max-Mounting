@@ -1,0 +1,20 @@
+# Fusion 360 / CAD temp and backup files
+*.f3d~
+*.bak
+~$*
+*.tmp
+*.lck
+
+# Slicer output (regenerate from STL/3MF)
+*.gcode
+*.bgcode
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Claude local notes
+CLAUDE.local.md
