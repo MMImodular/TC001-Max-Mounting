@@ -1,7 +1,6 @@
 # TOPDON TC001 Max: mechanical reference
 
-Reference geometry for the planned 1/4"-20 tripod adapter, which reroutes the
-camera's USB connector through a custom flex PCB. The Fusion 360 design
+Reference geometry for the TOPDON TC001 Max thermal camera. The Fusion 360 design
 "TOPDON TC001 Max" is built from the numbers below. Every user parameter in it
 has the same name as the **Param** column here, so correct both together once
 the camera has been measured with calipers.
@@ -77,7 +76,7 @@ leaves the listed "42 mm" as body plus plug.
 These are exposed in the Fusion design as construction planes `MOUNT_back`,
 `MOUNT_bottom`, `MOUNT_top` and `PLUG_seat`.
 
-## USB connector (most important for the adapter)
+## USB connector
 
 | Item | Value | Param | Status | Basis |
 |---|---|---|---|---|
@@ -99,8 +98,8 @@ camera implies the cable has a female C end, so it works as a PC lead or
 extension.
 
 **Plug envelope in the model.** `PlugEnvelope` is a box around the collar and
-plug, `env_clr` = 0.5 mm larger on every side and over the plug tip. The
-adapter's receptacle and flex must not cut into it. A mating USB-C receptacle
+plug, `env_clr` = 0.5 mm larger on every side and over the plug tip. Anything
+designed around the camera must not cut into it. A mating USB-C receptacle
 seats when its face reaches the collar face at Y = `collar_H`. That face is
 the datum `PLUG_seat`.
 
@@ -119,7 +118,7 @@ the datum `PLUG_seat`.
 | Thermal lens focal length | 3.2 mm, fixed focus | – | Confirmed [1] | – |
 | Visible camera | 1.5 MP | – | Confirmed [1] | – |
 | Thermal sensor | 256 × 192, 25 Hz, ≤ 40 mK | – | Confirmed [1][3] | – |
-| Field of view | Not published for the Max. The original TC001 is 56° × 42° [3]. | – | Unknown | Keep the adapter well behind the front face plane. |
+| Field of view | Not published for the Max. The original TC001 is 56° × 42° [3]. | – | Unknown | Keep anything mounted to the camera well behind the front face plane. |
 
 **Other features**
 
