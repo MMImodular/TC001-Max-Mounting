@@ -1,8 +1,13 @@
 # TC001 Max Mounting
 
-Mechanical design for a 1/4"-20 tripod adapter for the TOPDON TC001 Max
-thermal camera. The adapter reroutes the camera's USB-C connector through a
-custom flex PCB so the camera can sit on a standard tripod mount.
+> **How this was made.** Almost all of the CAD models, scripts and documentation in this
+> repository were made by **Claude** (Anthropic's AI model) working in Claude Code, driving
+> Fusion 360 through its API. The repository owner directed the work and reviewed it. Treat it
+> as you would any AI-generated design: check the dimensions before you trust them, and expect
+> mistakes. Sources for every dimension are listed in
+> [`docs/TC001MAX_MECHANICAL.md`](docs/TC001MAX_MECHANICAL.md).
+
+Mechanical models for the TOPDON TC001 Max thermal camera.
 
 The software side (webcam driver/installer) lives in
 [TC001-Max-Webcam](https://github.com/MMImodular/TC001-Max-Webcam).
@@ -23,8 +28,6 @@ been measured on a real unit yet; see the list of what to measure first in
 | `docs/TC001MAX_MECHANICAL.md` | Reference dimensions, their sources and confidence, and the model's coordinate frame and parameters. |
 | `fusion/build_tc001max.py` | Fusion 360 script that rebuilds the camera model from scratch. |
 
-Planned: `print/` for printable meshes (`.stl` / `.3mf`) of the adapter.
-
 ## License
 
 Copyright 2026 Matt Gaines.
@@ -41,7 +44,3 @@ FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN-OHL-P v2 for applicable
 conditions.
 
 Source location: <https://github.com/MMImodular/TC001-Max-Mounting>
-
-TOPDON and TC001 are trademarks of their owner and are used here only to
-identify the camera this adapter fits. This project is not affiliated with or
-endorsed by TOPDON. USB-C is used only to describe the connector.
